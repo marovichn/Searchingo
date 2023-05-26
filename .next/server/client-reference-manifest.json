@@ -254,6 +254,14 @@
           "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
+      },
+      "getServerSideProps": {
+        "id": "(sc_client)/./components/Nav.jsx",
+        "name": "getServerSideProps",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
       }
     },
     "(app-client)/./components/Provider.jsx": {
@@ -1074,6 +1082,14 @@
     "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Nav.jsx#default": {
       "id": "(app-client)/./components/Nav.jsx",
       "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Nav.jsx#getServerSideProps": {
+      "id": "(app-client)/./components/Nav.jsx",
+      "name": "getServerSideProps",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
       ],
