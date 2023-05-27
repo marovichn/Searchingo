@@ -12,7 +12,6 @@ const Nav = () => {
 
   const [providers, setProviders] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false);
-  const [toggleDropdownSignIn, setToggleDropdownSignIn] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -40,7 +39,6 @@ const Nav = () => {
       </Link>
 
       {/* Desktop Navigation */}
-      {console.log(providers, session)}
       <div className='sm:flex hidden'>
         {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
@@ -100,7 +98,7 @@ const Nav = () => {
       {/* Mobile Navigation */}
       <div className='sm:hidden flex relative'>
         {session?.user ? (
-          <div className='flex'>
+          <div className='flex' onClick={() => setToggleDropdown(!toggleDropdown)}>
             <IoIosArrowDown size={25} className={dropdownClasses} />
             <Image
               src={session?.user.image}
@@ -108,7 +106,7 @@ const Nav = () => {
               height={37}
               className='rounded-full'
               alt='profile'
-              onClick={() => setToggleDropdown(!toggleDropdown)}
+              
             />
 
             {toggleDropdown && (
