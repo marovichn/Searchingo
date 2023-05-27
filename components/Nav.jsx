@@ -6,16 +6,18 @@ import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
-export async function getServerSideProps(context) {
-  const providers = await getProviders();
-  return {
-    props: { providers },
-  };
-}
-
-const Nav = ({providers}) => {
+const Nav = () => {
   const { data: session } = useSession();
+
+  const [providers, setProviders] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      const res = await getProviders();
+      setProviders(res);
+    })();
+  }, []);
 
 
  const dropdownClasses = toggleDropdown

@@ -230,6 +230,40 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./app/layout.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/layout.jsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/layout.jsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/layout.jsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "metadata": {
+        "id": "(sc_client)/./app/layout.jsx",
+        "name": "metadata",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./components/Nav.jsx": {
       "*": {
         "id": "(sc_client)/./components/Nav.jsx",
@@ -249,40 +283,6 @@ self.__RSC_MANIFEST={
       },
       "default": {
         "id": "(sc_client)/./components/Nav.jsx",
-        "name": "default",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "getServerSideProps": {
-        "id": "(sc_client)/./components/Nav.jsx",
-        "name": "getServerSideProps",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/Provider.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/Provider.jsx",
-        "name": "*",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/Provider.jsx",
-        "name": "",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/Provider.jsx",
         "name": "default",
         "chunks": [
           "app/layout:static/chunks/app/layout.js"
@@ -1063,6 +1063,38 @@ self.__RSC_MANIFEST={
         "static/css/app/layout.css"
       ]
     },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\layout.jsx": {
+      "id": "(app-client)/./app/layout.jsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\layout.jsx#": {
+      "id": "(app-client)/./app/layout.jsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\layout.jsx#default": {
+      "id": "(app-client)/./app/layout.jsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\layout.jsx#metadata": {
+      "id": "(app-client)/./app/layout.jsx",
+      "name": "metadata",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
     "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Nav.jsx": {
       "id": "(app-client)/./components/Nav.jsx",
       "name": "*",
@@ -1081,38 +1113,6 @@ self.__RSC_MANIFEST={
     },
     "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Nav.jsx#default": {
       "id": "(app-client)/./components/Nav.jsx",
-      "name": "default",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Nav.jsx#getServerSideProps": {
-      "id": "(app-client)/./components/Nav.jsx",
-      "name": "getServerSideProps",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Provider.jsx": {
-      "id": "(app-client)/./components/Provider.jsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Provider.jsx#": {
-      "id": "(app-client)/./components/Provider.jsx",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Provider.jsx#default": {
-      "id": "(app-client)/./components/Provider.jsx",
       "name": "default",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"

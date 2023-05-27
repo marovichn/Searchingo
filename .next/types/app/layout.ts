@@ -1,4 +1,4 @@
-// File: C:\Users\Home\Desktop\Web development\Searchingo\share-prompts\app\layout.js
+// File: C:\Users\Home\Desktop\Web development\Searchingo\share-prompts\app\layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
