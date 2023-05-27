@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { AiOutlineGoogle, AiOutlineGithub } from "react-icons/ai";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Nav = () => {
@@ -11,6 +12,7 @@ const Nav = () => {
 
   const [providers, setProviders] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false);
+  const [toggleDropdownSignIn, setToggleDropdownSignIn] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -63,18 +65,34 @@ const Nav = () => {
         ) : (
           <>
             {providers &&
-              Object.values(providers).map((provider) => (
-                <button
-                  type='button'
-                  key={provider.name}
-                  onClick={() => {
-                    signIn(provider.id);
-                  }}
-                  className='black_btn'
-                >
-                  Sign in
-                </button>
-              ))}
+              Object.values(providers).map((provider) => {
+                return (
+                  <button
+                    type='button'
+                    key={provider.name}
+                    onClick={() => {
+                      signIn(provider.id);
+                    }}
+                    className='black_btn'
+                  >
+                    Sign in with {provider.name}{" "}
+                    {provider.name === "Google" ? (
+                      <div className='bg-white rounded-full ml-2 -mr-3 p-0.5'>
+                        <AiOutlineGoogle className='text-black' />
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                    {provider.name === "Github" ? (
+                      <div className='bg-white rounded-full ml-2 -mr-3 p-0.5'>
+                        <AiOutlineGithub className='text-black' />
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </button>
+                );
+              })}
           </>
         )}
       </div>
@@ -134,7 +152,22 @@ const Nav = () => {
                   }}
                   className='black_btn'
                 >
-                  Sign in
+                  Sign in 
+                  {" "}
+                  {provider.name === "Google" ? (
+                    <div className='bg-white rounded-full ml-2 -mr-3 p-0.5'>
+                      <AiOutlineGoogle className='text-black' />
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                  {provider.name === "Github" ? (
+                    <div className='bg-white rounded-full ml-2 -mr-3 p-0.5'>
+                      <AiOutlineGithub className='text-black' />
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </button>
               ))}
           </>

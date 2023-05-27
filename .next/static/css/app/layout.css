@@ -500,6 +500,18 @@ video {
 .mt-5{
   margin-top: 1.25rem;
 }
+.ml-2{
+  margin-left: 0.5rem;
+}
+.-mr-1{
+  margin-right: -0.25rem;
+}
+.-mr-2{
+  margin-right: -0.5rem;
+}
+.-mr-3{
+  margin-right: -0.75rem;
+}
 .flex{
   display: flex;
 }
@@ -525,15 +537,36 @@ video {
 .rounded-full{
   border-radius: 9999px;
 }
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
+}
+.p-1{
+  padding: 0.25rem;
+}
+.p-0{
+  padding: 0px;
+}
+.p-0\.5{
+  padding: 0.125rem;
 }
 .pt-3{
   padding-top: 0.75rem;
 }
 .text-center{
   text-align: center;
+}
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
