@@ -401,48 +401,6 @@ self.__RSC_MANIFEST={
         ],
         "async": false
       }
-    },
-    "(app-client)/./node_modules/next/dist/client/script.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
-        "name": "*",
-        "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
-        "name": "",
-        "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
-        "name": "default",
-        "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-        ],
-        "async": false
-      },
-      "handleClientScriptLoad": {
-        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
-        "name": "handleClientScriptLoad",
-        "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-        ],
-        "async": false
-      },
-      "initScriptLoader": {
-        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
-        "name": "initScriptLoader",
-        "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-        ],
-        "async": false
-      }
     }
   },
   "edgeSSRModuleMapping": {},
@@ -1366,86 +1324,6 @@ self.__RSC_MANIFEST={
     "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\create-prompt\\page.jsx#default": {
       "id": "(app-client)/./app/create-prompt/page.jsx",
       "name": "default",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\script.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/script.js",
-      "name": "*",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\script.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/script.js",
-      "name": "*",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\script.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/script.js",
-      "name": "",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\script.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/script.js",
-      "name": "",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\script.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/script.js",
-      "name": "default",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\script.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/script.js",
-      "name": "default",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\script.js#handleClientScriptLoad": {
-      "id": "(app-client)/./node_modules/next/dist/client/script.js",
-      "name": "handleClientScriptLoad",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\script.js#handleClientScriptLoad": {
-      "id": "(app-client)/./node_modules/next/dist/client/script.js",
-      "name": "handleClientScriptLoad",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\script.js#initScriptLoader": {
-      "id": "(app-client)/./node_modules/next/dist/client/script.js",
-      "name": "initScriptLoader",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\script.js#initScriptLoader": {
-      "id": "(app-client)/./node_modules/next/dist/client/script.js",
-      "name": "initScriptLoader",
       "chunks": [
         "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
       ],
