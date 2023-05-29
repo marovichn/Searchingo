@@ -46,6 +46,7 @@ const Feed = ({ type, post, setPost, submitting, handleSubmit }) => {
         />
         </label>
         
+        <button className="">Create!</button>
       </form>
     </section>
   );
