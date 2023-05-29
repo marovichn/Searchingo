@@ -43,7 +43,7 @@ const Nav = () => {
         {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
             <Link href='/create-prompt' className='black_btn'>
-              Create Post
+              Create Prompt
             </Link>
 
             <button type='button' onClick={signOut} className='outline_btn'>
@@ -71,7 +71,7 @@ const Nav = () => {
                     onClick={() => {
                       signIn(provider.id);
                     }}
-                    className='black_btn'
+                    className='black_btn mt-1'
                   >
                     Sign in with {provider.name}{" "}
                     {provider.name === "Google" ? (
