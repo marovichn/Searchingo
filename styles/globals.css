@@ -28,6 +28,10 @@
   top: 0;
 }
 
+#textarea-prompt{
+  resize:none;
+}
+
 .main:after {
   content: "";
   background-image: url("/images/grid.svg");
