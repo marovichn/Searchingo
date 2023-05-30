@@ -230,6 +230,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./components/Feed.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/Feed.jsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/Feed.jsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/Feed.jsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./app/layout.jsx": {
       "*": {
         "id": "(sc_client)/./app/layout.jsx",
@@ -1079,6 +1105,30 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Feed.jsx": {
+      "id": "(app-client)/./components/Feed.jsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Feed.jsx#": {
+      "id": "(app-client)/./components/Feed.jsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Feed.jsx#default": {
+      "id": "(app-client)/./components/Feed.jsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },

@@ -6,13 +6,17 @@ import React, { useState } from "react";
 import Form from "@components/Form";
 
 const CreatePrompt = () => {
-  const router = useRouter()
+  const router = useRouter();
   const { data: session } = useSession();
   const [submitting, setSubmitting] = useState(false);
   const [post, setPost] = useState({
     prompt: "",
     tag: "",
   });
+
+  if(!session){
+    router.push("/");
+  }
 
   const createPrompt = async (e) => {
     e.preventDefault();
@@ -28,12 +32,12 @@ const CreatePrompt = () => {
         }),
       });
 
-      if(response.ok){
-        router.push("/")
+      if (response.ok) {
+        router.push("/");
       }
     } catch (err) {
       console.log(err);
-    } finally{
+    } finally {
       setSubmitting(false);
     }
   };
