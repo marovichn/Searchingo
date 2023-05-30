@@ -492,6 +492,10 @@ video {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .-mr-3{
   margin-right: -0.75rem;
 }
