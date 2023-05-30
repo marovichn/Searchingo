@@ -9,6 +9,11 @@ import Profile from "@components/Profile";
 const ProfilePage = () => {
   const { data: session } = useSession();
   const [posts, setPosts] = useState([]);
+  const router = useRouter();
+
+  if(!session){
+    router.push("/");
+  }
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -30,7 +35,7 @@ const ProfilePage = () => {
     <Profile
       name={session?.user.name}
       desc='Welcome to your profile page'
-      data={[]}
+      data={posts}
       handleEdit={handleEdit}
       handleDelete={handleDelete}
     />
