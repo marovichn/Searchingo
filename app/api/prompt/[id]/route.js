@@ -44,4 +44,17 @@ export const PATCH= async (req, { params }) => {
 };
 
 
-//DELTE
+//DELETE
+
+export const DELETE = async (req, { params }) => {
+  try {
+    await connectToDB();
+   
+    await Prompt.findByIdAndRemove(params.id);
+
+    return new Response("Prompt deleted successfully", { status: 200 });
+  } catch (err) {
+    console.log(err);
+    return new Response("Could not fetch data", { status: 500 });
+  }
+};
