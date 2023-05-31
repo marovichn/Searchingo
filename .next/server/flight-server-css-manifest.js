@@ -8,16 +8,13 @@ self.__RSC_CSS_MANIFEST={
     "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\page": [
       "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\styles\\globals.css"
     ],
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\profile\\page": [
-      "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\styles\\globals.css"
-    ],
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\update-prompt\\page": [
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\[profiles]\\page": [
       "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\styles\\globals.css"
     ],
     "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\create-prompt\\page": [
       "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\styles\\globals.css"
     ],
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\[profiles]\\page": [
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\profile\\page": [
       "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\styles\\globals.css"
     ]
   }

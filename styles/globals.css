@@ -69,11 +69,32 @@
   opacity: 0.15;
 }
 
-@media screen and (max-width: 640px) {
+.sectionB{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.blob{
+  width: 110%;
+  height: 50%;
+  filter: drop-shadow(0 0 0.75rem #0000006a);
+  text-shadow: 0 0 0.75rem #00000040;
+}
+
+@media screen and (max-width: 540px) {
   .main {
     padding: 0;
+  } 
+  .blob{
+  width: 120%;
+  font-size: small;
   }
 }
+
+
 
 /* Tailwind Styles */
 
