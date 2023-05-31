@@ -5,7 +5,7 @@ const Feed = ({ type, post, setPost, submitting, handleSubmit }) => {
   return (
     <section className='w-full max-w-full flex-start flex-col'>
       <h1 className='head_text text-left'>
-        <span className='blue_gradient'>{type} </span>Post
+        <span className='blue_gradient'>{type} </span>Prompt
       </h1>
       <p className='desc text-left max-w-md'>
         {type} and share amazing prompts with the world and let your imagination
@@ -35,7 +35,7 @@ const Feed = ({ type, post, setPost, submitting, handleSubmit }) => {
         <label htmlFor=''>
           <span className='font-satoshi font-semibold text-base text-gray-700'>
             Tag 
-            <span className="font-normal ml-1"> (#product, #webdev, #art, #idea)</span>
+            <span className="font-normal ml-1"> (#product, #webdev, #art, #idea etc...)</span>
           </span>
           <input
           value={post.tag}

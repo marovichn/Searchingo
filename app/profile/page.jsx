@@ -28,8 +28,12 @@ const ProfilePage = () => {
     }
   }, []);
 
-  const handleEdit = () => {};
-  const handleDelete = () => {};
+  const handleEdit =async () => {
+    
+  };
+  const handleDelete =async () => {
+
+  };
 
   return (
     <Profile
