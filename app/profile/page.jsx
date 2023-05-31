@@ -11,7 +11,7 @@ const ProfilePage = () => {
   const [posts, setPosts] = useState([]);
   const router = useRouter();
 
-  if(!session){
+  if (!session) {
     router.push("/");
   }
 
@@ -28,11 +28,16 @@ const ProfilePage = () => {
     }
   }, []);
 
-  const handleEdit =async (post) => {
-    router.push(`/update-prompt?id=${post._id}`)
+  const handleEdit = async (post) => {
+    router.push(`/update-prompt?id=${post._id}`);
   };
-  const handleDelete =async (post) => {
-
+  const handleDelete = async (post) => {
+    const res = await fetch(`/api/prompt/${post._id}`, {
+      method: "DELETE",
+    });
+    if(res.ok){
+      router.push("/");
+    }
   };
 
   return (
