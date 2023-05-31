@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { useSession } from "next-auth/react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter} from "next/navigation";
 
 const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
   const [copied, setCopied] = useState("");
@@ -19,9 +19,13 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
     }, 3000);
   };
 
+  const goToProfileHandler =() =>{
+    router.push(`/profiles?id=${post.creator._id}`);
+  }
+
   return (
     <div className='prompt_card'>
-      <div className='flex justify-between items-start gap-5'>
+      <div onClick={goToProfileHandler} className='flex justify-between items-start gap-5'>
         <div className='flex-1 flex justify-start items-center gap-3 cursor-pointer'>
           <Image
             src={post.creator.image}
@@ -56,10 +60,10 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
         className='font-inter text-sm blue_gradient cursor-pointer'
         onClick={() => handleTagClick && handleTagClick(post.tag)}
       >
-        {post.tag}
+        {post.tag.includes("#") ? "" : "#"}{post.tag.toLowerCase()}
       </p>
 
-      {session?.user.id === post.creator._id && pathName === "/profile" && (
+      {session?.user.id === post.creator._id && /* pathName === "/profile" */ (
         <div className='mt-5 flex-center gap-4 border-t border-gray-100 pt-3'>
           <div className='bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full p-2'>
             <p

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import PromptCard from "./PromptCard";
+import { useSession } from "next-auth/react";
 
 const PromptCardList = ({ data, handleClick }) => {
   return (
@@ -22,6 +23,7 @@ const PromptCardList = ({ data, handleClick }) => {
 };
 
 const Feed = () => {
+  const {data:session}= useSession()
   const [searchText, setSearchText] = useState();
   const [posts, setPosts] = useState([]);
 
@@ -52,7 +54,7 @@ const Feed = () => {
         />
       </form>
 
-      <PromptCardList data={posts} handleClick={() => {}} />
+      {session && <PromptCardList data={posts} handleClick={() => {}} />}
     </section>
   );
 };
