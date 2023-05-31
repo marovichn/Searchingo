@@ -407,7 +407,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+          "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
         ],
         "async": false
       },
@@ -415,7 +415,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+          "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
         ],
         "async": false
       },
@@ -423,7 +423,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+          "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
         ],
         "async": false
       }
@@ -476,6 +476,32 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/update-prompt/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/update-prompt/page.jsx",
+        "name": "*",
+        "chunks": [
+          "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/update-prompt/page.jsx",
+        "name": "",
+        "chunks": [
+          "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/update-prompt/page.jsx",
+        "name": "default",
+        "chunks": [
+          "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
         ],
         "async": false
       }
@@ -1387,7 +1413,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+        "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
       ],
       "async": false
     },
@@ -1395,7 +1421,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+        "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
       ],
       "async": false
     },
@@ -1403,7 +1429,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+        "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
       ],
       "async": false
     },
@@ -1411,7 +1437,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+        "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
       ],
       "async": false
     },
@@ -1419,7 +1445,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+        "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
       ],
       "async": false
     },
@@ -1427,7 +1453,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+        "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
       ],
       "async": false
     },
@@ -1476,6 +1502,30 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\update-prompt\\page.jsx": {
+      "id": "(app-client)/./app/update-prompt/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\update-prompt\\page.jsx#": {
+      "id": "(app-client)/./app/update-prompt/page.jsx",
+      "name": "",
+      "chunks": [
+        "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\update-prompt\\page.jsx#default": {
+      "id": "(app-client)/./app/update-prompt/page.jsx",
+      "name": "default",
+      "chunks": [
+        "app/update-prompt/page:static/chunks/app/update-prompt/page.js"
       ],
       "async": false
     }

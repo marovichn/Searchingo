@@ -20,8 +20,8 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
             <PromptCard
               key={prompt._id}
               post={prompt}
-              handleEdit={() => handleEdit && handleEdit(post)}
-              handleDelete={() => handleDelete && handleDelete(post)}
+              handleEdit={() => handleEdit(prompt)}
+              handleDelete={() => handleDelete(prompt)}
             ></PromptCard>
           );
         })}
