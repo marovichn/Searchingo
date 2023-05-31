@@ -1,9 +1,6 @@
 {
   "/page": "app/page.js",
-  "/update-prompt/page": "app/update-prompt/page.js",
   "/profile/page": "app/profile/page.js",
-  "/create-prompt/page": "app/create-prompt/page.js",
   "/api/prompt/route": "app/api/prompt/route.js",
-  "/api/prompt/[id]/route": "app/api/prompt/[id]/route.js",
   "/api/users/[userId]/posts/route": "app/api/users/[userId]/posts/route.js"
 }

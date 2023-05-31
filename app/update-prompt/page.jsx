@@ -1,39 +1,44 @@
 "use client";
 
-
 import { useSearchParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Form from "@components/Form";
 
 const UpdatePrompt = () => {
   const router = useRouter();
-const searchParams = useSearchParams();
-const promptId = searchParams.get("id");
+  const searchParams = useSearchParams();
+  const promptId = searchParams.get("id");
 
   const [submitting, setSubmitting] = useState(false);
   const [post, setPost] = useState({
     prompt: "",
     tag: "",
   });
-  
-  useEffect(()=>{
-    const fetchPost=async()=>{
-        const prompt = await fetch(`/api/prompt/${promptId}`);
-        const post = await prompt.json();
-        setPost({
-            prompt: post.prompt,
-            tag: post.tag,
-        });
+
+  useEffect(() => {
+    const fetchPost = async () => {
+      const prompt = await fetch(`/api/prompt/${promptId}`);
+      const post = await prompt.json();
+      setPost({
+        prompt: post.prompt,
+        tag: post.tag,
+      });
     };
-    if(promptId){fetchPost();}    
-  },[promptId])
+    if (promptId) {
+      fetchPost();
+    }
+  }, [promptId]);
 
   const updatePrompt = async (e) => {
     e.preventDefault();
     setSubmitting(true);
 
+    if (!promptId) {
+      return alert("Prompt Id not found");
+    }
+
     try {
-      const response = await fetch(`/api/prompt/${promptId.id}`, {
+      const response = await fetch(`/api/prompt/${promptId}`, {
         method: "PATCH",
         body: JSON.stringify({
           prompt: post.prompt,
@@ -42,7 +47,7 @@ const promptId = searchParams.get("id");
       });
 
       if (response.ok) {
-        router.push("/");
+        router.push("/profile");
       }
     } catch (err) {
       console.log(err);
