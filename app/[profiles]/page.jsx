@@ -36,8 +36,9 @@ const ProfilePage = () => {
   }
 
   const handleEdit = async (post) => {
-    if(post){
-    router.push(`/update-prompt?id=${post._id}`);}
+    if (post) {
+      router.push(`/update-prompt?id=${post._id}`);
+    }
   };
 
   const handleDelete = async (post) => {

@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import PromptCard from "./PromptCard";
 import { useSession } from "next-auth/react";
+import { AiOutlineSearch } from "react-icons/ai";
+import Link from "next/link";
 
 const PromptCardList = ({ data, handleClick }) => {
   return (
@@ -27,7 +29,24 @@ const Feed = () => {
   const [searchText, setSearchText] = useState();
   const [posts, setPosts] = useState([]);
 
-  const handleSearchChange = (e) => {};
+  const handleSearchChange = (e) => {
+    if (e.target.value) {
+      setSearchText(e.target.value);
+    }
+  };
+
+  const searchHandler = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch(`/api/prompt/search/${searchText.trim()}`);
+      const data = await res.json();
+
+      setPosts(data);
+    } catch (err) {
+      console.log(err);
+    }
+    setSearchText("");
+  };
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -66,9 +85,9 @@ const Feed = () => {
           </svg>
           <div
             className='text-3xl font-extrabold leading-[1.15] text-white md:text-5xl w-75% h-75% flex-center text-center'
-            style={{ marginTop: "-60%", fontSize: "54px"}}
+            style={{ marginTop: "-60%", fontSize: "54px" }}
           >
-            Log or Sign In 
+            Log or Sign In
             <br />
             to get started!!!
           </div>
@@ -79,7 +98,7 @@ const Feed = () => {
 
   return (
     <section className='feed'>
-      <form className='relative w-full flex-center'>
+      <form onSubmit={searchHandler} className='relative w-full flex-center'>
         <input
           type='text'
           placeholder='Search for a tag or username'
@@ -88,9 +107,31 @@ const Feed = () => {
           required
           className='search_input peer'
         />
+        <button
+          className=' ml-3 bg-orange-400 p-2 rounded-full drop-shadow-md'
+          type='submit'
+        >
+          <AiOutlineSearch className='text-white' size={20} />
+        </button>
       </form>
 
-      <PromptCardList data={posts} handleClick={() => {}} />
+      {posts.length === 0 ? (
+        <section>
+          <h1>Invalid tag or there is no prompts with that tag :(</h1>
+          <p>
+            Try creating prompts with specific tags or continue browsing all of
+            the prompts.
+          </p>
+          <div>
+            <Link href='/create-prompt'>Create Prompt</Link>
+          </div>
+          <div>
+            <Link href='/'>Back to all prompts</Link>
+          </div>
+        </section>
+      ) : (
+        <PromptCardList data={posts} handleClick={() => {}} />
+      )}
     </section>
   );
 };
