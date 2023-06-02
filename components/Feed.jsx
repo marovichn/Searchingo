@@ -48,6 +48,17 @@ const Feed = () => {
     setSearchText("");
   };
 
+  const backToFeedHandler = () => {
+    const fetchPosts = async () => {
+      const response = await fetch("/api/prompt");
+      const data = await response.json();
+
+      setPosts(data);
+    };
+
+    fetchPosts();
+  };
+
   useEffect(() => {
     const fetchPosts = async () => {
       const response = await fetch("/api/prompt");
@@ -99,6 +110,13 @@ const Feed = () => {
   return (
     <section className='feed'>
       <form onSubmit={searchHandler} className='relative w-full flex-center'>
+        <div
+          onClick={backToFeedHandler}
+          className='mr-3 bg-orange-400 py-1.5 
+          drop-shadow-md hover:drop-shadow-lg px-2 rounded-full  text-white font-semibold cursor-pointer transition-all'
+        >
+          All
+        </div>
         <input
           type='text'
           placeholder='Search for a tag or username'
@@ -108,7 +126,7 @@ const Feed = () => {
           className='search_input peer'
         />
         <button
-          className=' ml-3 bg-orange-400 p-2 rounded-full drop-shadow-md'
+          className=' ml-3 bg-orange-400 p-2 rounded-full drop-shadow-md hover:drop-shadow-lg'
           type='submit'
         >
           <AiOutlineSearch className='text-white' size={20} />
@@ -116,17 +134,34 @@ const Feed = () => {
       </form>
 
       {posts.length === 0 ? (
-        <section>
-          <h1>Invalid tag or there is no prompts with that tag :(</h1>
-          <p>
+        <section
+          className='space-y-6 py-8 w-full'
+          style={{ marginTop: 30 + "px" }}
+        >
+          <h1 className='text-3xl sm:text-5xl font-bold leading-[1.15] text-black text-center'>
+            Invalid tag or there is no prompts with that tag :(
+          </h1>
+          <p className='text-gray-700 text-center mt-5'>
             Try creating prompts with specific tags or continue browsing all of
             the prompts.
           </p>
-          <div>
-            <Link href='/create-prompt'>Create Prompt</Link>
-          </div>
-          <div>
-            <Link href='/'>Back to all prompts</Link>
+          <div
+            className='flex justify-between'
+            style={{ marginTop: 80 + "px" }}
+          >
+            <div className='bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full p-2 text-white font-semibold'>
+              <Link className='mx-2' href='/create-prompt'>
+                Create Prompt
+              </Link>
+            </div>
+            <div>
+              <button
+                className='rounded-full border border-black bg-transparent py-2 px-6 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center'
+                onClick={backToFeedHandler}
+              >
+                Back to all prompts
+              </button>
+            </div>
           </div>
         </section>
       ) : (
