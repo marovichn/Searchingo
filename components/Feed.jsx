@@ -31,9 +31,8 @@ const Feed = () => {
   const [response, setResponse] = useState();
 
   const handleSearchChange = (e) => {
-    if (e.target.value) {
-      setSearchText(e.target.value);
-    }
+    setSearchText(e.target.value);
+    
   };
 
   const searchHandler = async (e) => {
@@ -66,8 +65,7 @@ const Feed = () => {
   const handleTagClick = async (text) => {
     setResponse(true);
     try {
-      const res = await fetch(`/api/prompt/search/${text.trim()}`);
-      const data = await res.json();
+      const data = posts.filter(p=>p.tag === text);
 
       setPosts(data);
     } catch (err) {
@@ -170,7 +168,7 @@ const Feed = () => {
         </div>
         <input
           type='text'
-          placeholder='Search for a tag or username'
+          placeholder='Enter tag,username or part of the prompt'
           value={searchText}
           onChange={handleSearchChange}
           required
