@@ -6,7 +6,7 @@ import { useSession } from "next-auth/react";
 import { AiOutlineSearch } from "react-icons/ai";
 import Link from "next/link";
 
-const PromptCardList = ({ data, handleClick }) => {
+const PromptCardList = ({ data, handleClick, handleTagClick }) => {
   return (
     <div className='mt-16 prompt_layout'>
       {data.map((prompt) => {
@@ -14,7 +14,7 @@ const PromptCardList = ({ data, handleClick }) => {
           <PromptCard
             key={prompt._id}
             post={prompt}
-            handleTagClick={() => {}}
+            handleTagClick={handleTagClick}
             handleEdit={() => {}}
             handleDelete={() => {}}
           ></PromptCard>
@@ -28,6 +28,7 @@ const Feed = () => {
   const { data: session } = useSession();
   const [searchText, setSearchText] = useState();
   const [posts, setPosts] = useState([]);
+  const [response, setResponse] = useState();
 
   const handleSearchChange = (e) => {
     if (e.target.value) {
@@ -37,6 +38,7 @@ const Feed = () => {
 
   const searchHandler = async (e) => {
     e.preventDefault();
+    setResponse(true);
     try {
       const res = await fetch(`/api/prompt/search/${searchText.trim()}`);
       const data = await res.json();
@@ -49,6 +51,8 @@ const Feed = () => {
   };
 
   const backToFeedHandler = () => {
+    setSearchText("");
+    setResponse(true);
     const fetchPosts = async () => {
       const response = await fetch("/api/prompt");
       const data = await response.json();
@@ -59,7 +63,21 @@ const Feed = () => {
     fetchPosts();
   };
 
+  const handleTagClick = async (text) => {
+    setResponse(true);
+    try {
+      const res = await fetch(`/api/prompt/search/${text.trim()}`);
+      const data = await res.json();
+
+      setPosts(data);
+    } catch (err) {
+      console.log(err);
+    }
+    setSearchText("");
+  };
+
   useEffect(() => {
+    setResponse(false);
     const fetchPosts = async () => {
       const response = await fetch("/api/prompt");
       const data = await response.json();
@@ -69,6 +87,39 @@ const Feed = () => {
 
     fetchPosts();
   }, []);
+
+  const feedback = response ? (
+              <section
+                className='space-y-6 py-8 w-full'
+                style={{ marginTop: 30 + "px" }}
+              >
+                <h1 className='text-3xl sm:text-5xl font-bold leading-[1.15] text-black text-center'>
+                  Invalid tag or there is no prompts with that tag :(
+                </h1>
+                <p className='text-gray-700 text-center mt-5'>
+                  Try creating prompts with specific tags or continue browsing
+                  all of the prompts.
+                </p>
+                <div
+                  className='flex justify-between'
+                  style={{ marginTop: 80 + "px" }}
+                >
+                  <div className='bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full p-2 text-white font-semibold'>
+                    <Link className='mx-2' href='/create-prompt'>
+                      Create Prompt
+                    </Link>
+                  </div>
+                  <div>
+                    <button
+                      className='rounded-full border border-black bg-transparent py-2 px-6 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center'
+                      onClick={backToFeedHandler}
+                    >
+                      Back to all prompts
+                    </button>
+                  </div>
+                </div>
+              </section>
+            ) : "";
 
   if (!session) {
     return (
@@ -133,39 +184,12 @@ const Feed = () => {
         </button>
       </form>
 
-      {posts.length === 0 ? (
-        <section
-          className='space-y-6 py-8 w-full'
-          style={{ marginTop: 30 + "px" }}
-        >
-          <h1 className='text-3xl sm:text-5xl font-bold leading-[1.15] text-black text-center'>
-            Invalid tag or there is no prompts with that tag :(
-          </h1>
-          <p className='text-gray-700 text-center mt-5'>
-            Try creating prompts with specific tags or continue browsing all of
-            the prompts.
-          </p>
-          <div
-            className='flex justify-between'
-            style={{ marginTop: 80 + "px" }}
-          >
-            <div className='bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full p-2 text-white font-semibold'>
-              <Link className='mx-2' href='/create-prompt'>
-                Create Prompt
-              </Link>
-            </div>
-            <div>
-              <button
-                className='rounded-full border border-black bg-transparent py-2 px-6 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center'
-                onClick={backToFeedHandler}
-              >
-                Back to all prompts
-              </button>
-            </div>
-          </div>
-        </section>
-      ) : (
-        <PromptCardList data={posts} handleClick={() => {}} />
+      {posts.length === 0 ? feedback : (
+        <PromptCardList
+          data={posts}
+          handleClick={() => {}}
+          handleTagClick={handleTagClick}
+        />
       )}
     </section>
   );
