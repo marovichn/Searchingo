@@ -9,6 +9,7 @@ import Profile from "@components/Profile";
 const ProfilePage = () => {
   const { data: session } = useSession();
   const [posts, setPosts] = useState([]);
+  const [favorites, setFavorites] = useState([]);
   const router = useRouter();
 
   if (!session) {
@@ -22,9 +23,16 @@ const ProfilePage = () => {
 
       setPosts(data);
     };
+    const fetchFavorites = async () => {
+      const response = await fetch(`/api/users/${session?.user.id}/favorite`);
+      const data = await response.json();
+
+      setFavorites(data);
+    };
 
     if (session?.user.id) {
       fetchPosts();
+      fetchFavorites();
     }
   }, []);
 
@@ -54,6 +62,7 @@ const ProfilePage = () => {
       name={session?.user.name}
       desc='Welcome to your profile page'
       data={posts}
+      favorites={favorites}
       handleEdit={handleEdit}
       handleDelete={handleDelete}
     />

@@ -6,7 +6,7 @@ import { useSession } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
-const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
+const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete, favorite }) => {
   const [copied, setCopied] = useState("");
   const [isFavorite, setIsFavorite] = useState(false);
   const pathName = usePathname();
@@ -90,7 +90,13 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
   };
 
   return (
-    <div className='prompt_card'>
+    <div
+      className={
+        !favorite
+          ? "prompt_card border border-gray-300 bg-white/20 bg-clip-padding"
+          : "prompt_card bg-rose-500/10 border-rose-500 bg-clip-padding border-[1px]"
+      }
+    >
       <div
         onClick={goToProfileHandler}
         className='flex justify-between items-start gap-5'
@@ -150,7 +156,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
       )}
 
       {session?.user.id === post.creator._id && pathName === "/profile" && (
-        <div className='mt-5 flex-center gap-4 border-t border-gray-100 pt-3'>
+        <div className='mt-5 flex-center gap-4 border-gray-100 pt-3'>
           <div className='bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full p-2'>
             <p
               className='font-inter text-sm  cursor-pointer text-white mx-2 font-semibold'

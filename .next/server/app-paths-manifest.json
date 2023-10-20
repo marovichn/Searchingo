@@ -1,7 +1,6 @@
 {
   "/page": "app/page.js",
-  "/profile/page": "app/profile/page.js",
-  "/api/prompt/route": "app/api/prompt/route.js",
-  "/api/users/[userId]/favorite/route": "app/api/users/[userId]/favorite/route.js",
-  "/api/users/[userId]/posts/route": "app/api/users/[userId]/posts/route.js"
+  "/[profiles]/page": "app/[profiles]/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/users/[userId]/favorite/[favoriteId]/route": "app/api/users/[userId]/favorite/[favoriteId]/route.js"
 }

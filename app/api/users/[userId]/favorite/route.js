@@ -22,7 +22,7 @@ export const GET = async (req, { params }) => {
     // Fetch and map favorite prompts
     const favoritePrompts = await Promise.all(
       favoriteIds.map(async (favoriteId) => {
-        const prompt = await Prompt.findById(favoriteId);
+        const prompt = await Prompt.findById(favoriteId).populate("creator");
         return prompt;
       })
     );
