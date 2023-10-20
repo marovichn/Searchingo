@@ -40,10 +40,6 @@ const ProfilePage = () => {
     router.push(`/update-prompt?id=${post._id}`);
   };
   const handleDelete = async (post) => {
-    const hasConfirmed = confirm(
-      "Are you sure you want to delete this prompt?"
-    );
-    if (hasConfirmed) {
       try {
         const res = await fetch(`/api/prompt/${post._id.toString()}`, {
           method: "DELETE",
@@ -54,7 +50,6 @@ const ProfilePage = () => {
       } catch (err) {
         console.log(err);
       }
-    }
   };
 
   return (
