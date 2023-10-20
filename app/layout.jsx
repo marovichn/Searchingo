@@ -8,6 +8,9 @@ import { SessionProvider } from "next-auth/react";
 export const metadata = {
   title: "Searchingo",
   description: "Discover & Share AI Prompts",
+  icons:{
+    icon:"/icon.ico"
+  }
 };
 
 const RootLayout = ({ children, session }) => (
