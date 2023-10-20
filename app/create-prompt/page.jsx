@@ -13,10 +13,16 @@ const CreatePrompt = () => {
     prompt: "",
     tag: "",
   });
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  if (!mounted) {
+    return null;
+  }
 
   if (!session) {
     router.push("/");
-    return null;
   }
 
   const createPrompt = async (e) => {
@@ -35,7 +41,6 @@ const CreatePrompt = () => {
 
       if (response.ok) {
         router.push("/");
-        return null;
       }
     } catch (err) {
       console.log(err);
