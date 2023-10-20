@@ -14,6 +14,7 @@ const ProfilePage = () => {
 
   if (!session) {
     router.push("/");
+    return null;
   }
 
   useEffect(() => {
@@ -38,18 +39,24 @@ const ProfilePage = () => {
 
   const handleEdit = async (post) => {
     router.push(`/update-prompt?id=${post._id}`);
+    return null;
   };
   const handleDelete = async (post) => {
+    const hasConfirmed = confirm(
+      "Are you sure you want to delete this prompt?"
+    );
+    if (hasConfirmed) {
       try {
         const res = await fetch(`/api/prompt/${post._id.toString()}`, {
           method: "DELETE",
         });
 
-        const filteredPosts = posts.filter((p)=>p._id !== post._id);
-        setPosts(filteredPosts);
+        setPosts((prevPosts) => prevPosts.filter((p) => p._id !== post._id));
+
       } catch (err) {
         console.log(err);
       }
+    }
   };
 
   return (

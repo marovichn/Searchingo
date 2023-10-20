@@ -14,8 +14,9 @@ const CreatePrompt = () => {
     tag: "",
   });
 
-  if(!session){
+  if (!session) {
     router.push("/");
+    return null;
   }
 
   const createPrompt = async (e) => {
@@ -34,6 +35,7 @@ const CreatePrompt = () => {
 
       if (response.ok) {
         router.push("/");
+        return null;
       }
     } catch (err) {
       console.log(err);
