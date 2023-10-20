@@ -230,6 +230,144 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./components/Feed.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/Feed.jsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/Feed.jsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/Feed.jsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/PromptCard.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/PromptCard.jsx",
+        "name": "*",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/PromptCard.jsx",
+        "name": "",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/PromptCard.jsx",
+        "name": "default",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/image.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "*",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "default",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/shared/lib/head.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "*",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "default",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "defaultHead": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "defaultHead",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./app/layout.jsx": {
       "*": {
         "id": "(sc_client)/./app/layout.jsx",
@@ -290,9 +428,9 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/dist/client/image.js": {
+    "(app-client)/./app/[profiles]/page.jsx": {
       "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "id": "(sc_client)/./app/[profiles]/page.jsx",
         "name": "*",
         "chunks": [
           "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
@@ -300,7 +438,7 @@ self.__RSC_MANIFEST={
         "async": false
       },
       "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "id": "(sc_client)/./app/[profiles]/page.jsx",
         "name": "",
         "chunks": [
           "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
@@ -308,148 +446,10 @@ self.__RSC_MANIFEST={
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "id": "(sc_client)/./app/[profiles]/page.jsx",
         "name": "default",
         "chunks": [
           "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/client/link.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "*",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "default",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/shared/lib/head.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "*",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "default",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      },
-      "defaultHead": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "defaultHead",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/Feed.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/Feed.jsx",
-        "name": "*",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/Feed.jsx",
-        "name": "",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/Feed.jsx",
-        "name": "default",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/PromptCard.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/PromptCard.jsx",
-        "name": "*",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/PromptCard.jsx",
-        "name": "",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/PromptCard.jsx",
-        "name": "default",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./app/create-prompt/page.jsx": {
-      "*": {
-        "id": "(sc_client)/./app/create-prompt/page.jsx",
-        "name": "*",
-        "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/create-prompt/page.jsx",
-        "name": "",
-        "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/create-prompt/page.jsx",
-        "name": "default",
-        "chunks": [
-          "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
         ],
         "async": false
       }
@@ -476,32 +476,6 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/profile/page:static/chunks/app/profile/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./app/[profiles]/page.jsx": {
-      "*": {
-        "id": "(sc_client)/./app/[profiles]/page.jsx",
-        "name": "*",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/[profiles]/page.jsx",
-        "name": "",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/[profiles]/page.jsx",
-        "name": "default",
-        "chunks": [
-          "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
         ],
         "async": false
       }
@@ -1186,6 +1160,214 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Feed.jsx": {
+      "id": "(app-client)/./components/Feed.jsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Feed.jsx#": {
+      "id": "(app-client)/./components/Feed.jsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Feed.jsx#default": {
+      "id": "(app-client)/./components/Feed.jsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\PromptCard.jsx": {
+      "id": "(app-client)/./components/PromptCard.jsx",
+      "name": "*",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\PromptCard.jsx#": {
+      "id": "(app-client)/./components/PromptCard.jsx",
+      "name": "",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\PromptCard.jsx#default": {
+      "id": "(app-client)/./components/PromptCard.jsx",
+      "name": "default",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\image.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\image.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\image.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\image.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\shared\\lib\\head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\shared\\lib\\head.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\shared\\lib\\head.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "default",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "default",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\shared\\lib\\head.js#defaultHead": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "defaultHead",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#defaultHead": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "defaultHead",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
     "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\styles\\globals.css#": {
       "id": "null",
       "name": "default",
@@ -1249,235 +1431,27 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\[profiles]\\page.jsx": {
+      "id": "(app-client)/./app/[profiles]/page.jsx",
       "name": "*",
       "chunks": [
         "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "*",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\image.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\[profiles]\\page.jsx#": {
+      "id": "(app-client)/./app/[profiles]/page.jsx",
       "name": "",
       "chunks": [
         "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\image.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\image.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\[profiles]\\page.jsx#default": {
+      "id": "(app-client)/./app/[profiles]/page.jsx",
       "name": "default",
       "chunks": [
         "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\image.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "default",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\client\\link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\client\\link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\shared\\lib\\head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\shared\\lib\\head.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\shared\\lib\\head.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "default",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "default",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\shared\\lib\\head.js#defaultHead": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "defaultHead",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#defaultHead": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "defaultHead",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Feed.jsx": {
-      "id": "(app-client)/./components/Feed.jsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Feed.jsx#": {
-      "id": "(app-client)/./components/Feed.jsx",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\Feed.jsx#default": {
-      "id": "(app-client)/./components/Feed.jsx",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\PromptCard.jsx": {
-      "id": "(app-client)/./components/PromptCard.jsx",
-      "name": "*",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\PromptCard.jsx#": {
-      "id": "(app-client)/./components/PromptCard.jsx",
-      "name": "",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\components\\PromptCard.jsx#default": {
-      "id": "(app-client)/./components/PromptCard.jsx",
-      "name": "default",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\create-prompt\\page.jsx": {
-      "id": "(app-client)/./app/create-prompt/page.jsx",
-      "name": "*",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\create-prompt\\page.jsx#": {
-      "id": "(app-client)/./app/create-prompt/page.jsx",
-      "name": "",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\create-prompt\\page.jsx#default": {
-      "id": "(app-client)/./app/create-prompt/page.jsx",
-      "name": "default",
-      "chunks": [
-        "app/create-prompt/page:static/chunks/app/create-prompt/page.js"
       ],
       "async": false
     },
@@ -1502,30 +1476,6 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/profile/page:static/chunks/app/profile/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\[profiles]\\page.jsx": {
-      "id": "(app-client)/./app/[profiles]/page.jsx",
-      "name": "*",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\[profiles]\\page.jsx#": {
-      "id": "(app-client)/./app/[profiles]/page.jsx",
-      "name": "",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Home\\Desktop\\Web development\\Searchingo\\share-prompts\\app\\[profiles]\\page.jsx#default": {
-      "id": "(app-client)/./app/[profiles]/page.jsx",
-      "name": "default",
-      "chunks": [
-        "app/[profiles]/page:static/chunks/app/[profiles]/page.js"
       ],
       "async": false
     }
