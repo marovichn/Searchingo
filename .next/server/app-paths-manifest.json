@@ -1,6 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/[profiles]/page": "app/[profiles]/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/api/users/[userId]/favorite/[favoriteId]/route": "app/api/users/[userId]/favorite/[favoriteId]/route.js"
-}
