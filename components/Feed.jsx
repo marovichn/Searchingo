@@ -26,9 +26,9 @@ const PromptCardList = ({ data, handleClick, handleTagClick }) => {
 
 const Feed = () => {
   const { data: session } = useSession();
-  const [searchText, setSearchText] = useState();
+  const [searchText, setSearchText] = useState("");
   const [posts, setPosts] = useState([]);
-  const [response, setResponse] = useState();
+  const [response, setResponse] = useState("");
 
   const handleSearchChange = (e) => {
     setSearchText(e.target.value);
@@ -39,6 +39,7 @@ const Feed = () => {
     e.preventDefault();
     setResponse(true);
     try {
+      console.log(searchText)
       const res = await fetch(`/api/prompt/search/${searchText.trim()}`);
       const data = await res.json();
 
