@@ -1,15 +1,9 @@
+"use client"
+
 import "@styles/globals.css";
 
 import Nav from "@components/Nav";
 import { SessionProvider } from "next-auth/react";
-
-export const metadata = {
-  title: "Searchingo",
-  description: "Discover & Share AI Prompts",
-  icons:{
-    icon:"/icon.ico"
-  }
-};
 
 const RootLayout = ({ children, session }) => (
   <html lang='en'>
