@@ -12,19 +12,9 @@ const ProfilePage = () => {
   const [posts, setPosts] = useState([]);
   const { data: session } = useSession();
   const router = useRouter();
+
   useEffect(() => {
     setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
-  if (!session) {
-    router.push("/");
-  }
-
-  useEffect(() => {
     const fetchPosts = async () => {
       const response = await fetch(`/api/users/${session?.user.id}/posts`);
       const data = await response.json();
@@ -43,6 +33,14 @@ const ProfilePage = () => {
       fetchFavorites();
     }
   }, [session?.user.id]);
+
+  if (!mounted) {
+    return null;
+  }
+
+  if (!session) {
+    router.push("/");
+  }
 
   const handleEdit = async (post) => {
     router.push(`/update-prompt?id=${post._id}`);
