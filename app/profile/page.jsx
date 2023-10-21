@@ -7,16 +7,17 @@ import React, { useEffect, useState } from "react";
 import Profile from "@components/Profile";
 
 const ProfilePage = () => {
-  const { data: session } = useSession();
-  const [favorites, setFavorites] = useState([]);
-
-  const [posts, setPosts] = useState([]);
-  const router = useRouter();
-
   const [mounted, setMounted] = useState(false);
+
+  const [favorites, setFavorites] = useState([]);
+  const [posts, setPosts] = useState([]);
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const { data: session } = useSession();
+  const router = useRouter();
+
   if (!mounted) {
     return null;
   }

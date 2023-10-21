@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 import Form from "@components/Form";
 
 const CreatePrompt = () => {
+  const [mounted, setMounted] = useState(false);
   const router = useRouter();
   const { data: session } = useSession();
   const [submitting, setSubmitting] = useState(false);
@@ -13,7 +14,7 @@ const CreatePrompt = () => {
     prompt: "",
     tag: "",
   });
-  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
     setMounted(true);
   }, []);

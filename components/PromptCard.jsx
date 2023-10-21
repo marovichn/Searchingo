@@ -20,7 +20,6 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete, favorite }
         if (!data || data.length === 0) {
           setIsFavorite(false);
         }
-        console.log(data);
         // Check if post._id is included in the data array
         data.forEach((p) => {
           if (p._id === post._id) {
