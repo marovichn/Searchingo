@@ -8,15 +8,13 @@ import Profile from "@components/Profile";
 
 const ProfilePage = () => {
   const [mounted, setMounted] = useState(false);
-
   const [favorites, setFavorites] = useState([]);
   const [posts, setPosts] = useState([]);
+  const { data: session } = useSession();
+  const router = useRouter();
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  const { data: session } = useSession();
-  const router = useRouter();
 
   if (!mounted) {
     return null;
@@ -44,7 +42,7 @@ const ProfilePage = () => {
       fetchPosts();
       fetchFavorites();
     }
-  }, []);
+  }, [session?.user.id]);
 
   const handleEdit = async (post) => {
     router.push(`/update-prompt?id=${post._id}`);
